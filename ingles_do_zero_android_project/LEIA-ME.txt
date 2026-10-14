@@ -1,0 +1,18 @@
+INGLÊS DO ZERO — projeto Android
+
+Este projeto empacota a versão web offline dentro de um app Android (WebView). Ele não foi compilado neste ambiente, então ainda não contém um APK instalável.
+
+GERAR O APK COM ANDROID STUDIO
+1. Instale o Android Studio em um computador.
+2. Abra a pasta InglesDoZero como projeto existente.
+3. Aguarde a sincronização do Gradle e instale o Android SDK 35 quando solicitado.
+4. Use Build > Build Bundle(s) / APK(s) > Build APK(s).
+5. O APK de teste será criado em app/build/outputs/apk/debug/app-debug.apk.
+
+ALTERNATIVA COM GITHUB ACTIONS
+1. Crie um repositório GitHub e envie todos os arquivos desta pasta.
+2. Abra a aba Actions e execute “Build Android APK” (ou faça push na branch main).
+3. Ao terminar, baixe o artefato “ingles-do-zero-apk” na execução da ação. Dentro dele estará app-debug.apk.
+4. Transfira o APK ao Android e abra-o. Talvez seja necessário permitir a instalação dessa fonte nas configurações do aparelho.
+
+O APK é uma versão de teste (debug), não assinada para publicação na Play Store. O app contém as lições iniciais e usa a voz disponível no Android para pronúncia. O progresso fica no armazenamento local do app.
